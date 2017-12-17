@@ -5,6 +5,6 @@ These started with the default profile in S3D and I made changes for Linear adva
 
 Currrently tuned for Detail and PLA (a couple of variants).   I need to do further testing for other materials, layer heights, etc...
 
-I alos use this bed model for both printers, until a proper MK3 model can be found:
+I also use this bed model for both printers, until a proper MK3 model can be found:
 
 https://www.thingiverse.com/thing:2196524
