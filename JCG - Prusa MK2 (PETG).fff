@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-17 12:31:45" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-17 13:37:26" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
@@ -105,7 +105,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="1" speed="60"/>
+    <setpoint layer="2" speed="60"/>
     <setpoint layer="20" speed="80"/>
     <setpoint layer="30" speed="100"/>
   </fanSpeed>
