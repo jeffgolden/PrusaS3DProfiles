@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PLA)" version="2017-12-17 10:11:34" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-17 11:15:47" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
-  <printMaterial>Matterhackers PLA</printMaterial>
+  <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -92,7 +92,8 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="215"/>
+    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="2" temperature="240"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -100,11 +101,13 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="60"/>
+    <setpoint layer="1" temperature="85"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
+    <setpoint layer="1" speed="60"/>
+    <setpoint layer="20" speed="80"/>
+    <setpoint layer="30" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -198,15 +201,6 @@
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
   <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="PLA">
-    <globalExtruderTemperature>200</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
     <topSolidLayers>3</topSolidLayers>
@@ -243,22 +237,30 @@
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   </autoConfigureQuality>
-  <autoConfigureMaterial name="Matterhackers PLA">
-    <globalExtruderTemperature>215</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
+  <autoConfigureMaterial name="PETG">
+    <temperatureController name="Primary Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="235"/>
+      <setpoint layer="2" temperature="240"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="85"/>
+    </temperatureController>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="Makergeeks PLA">
-    <globalExtruderTemperature>235</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
+      <setpoint layer="1" speed="60"/>
+      <setpoint layer="20" speed="80"/>
+      <setpoint layer="30" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
 </profile>
