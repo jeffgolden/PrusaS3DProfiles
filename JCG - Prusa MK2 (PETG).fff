@@ -258,7 +258,7 @@
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="1" speed="60"/>
+      <setpoint layer="2" speed="60"/>
       <setpoint layer="20" speed="80"/>
       <setpoint layer="30" speed="100"/>
     </fanSpeed>
