@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-17 13:37:26" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-29 10:22:35" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
@@ -149,15 +149,15 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>Prusa-i3-MK2-bed.stl</printerModelsOverride>
-  <startingGcode>M115 U3.0.7 ; use the latest firmware version,G28 W ; home all axes without mesh bed leveling,G80 ; run mesh bed leveling routine,G1 Y-3.0 F1000.0 ; prepare to prime,G92 E0 ; reset extrusion distance,G1 X60.0 E9.0  F1000.0 ; priming,G1 X100.0 E12.5  F1000.0 ; priming,M900 K30; PLA us K45 for PET K30 for PLA/ABS</startingGcode>
+  <startingGcode>; begin starting script,; home -> heat bed -> delay 2 minutes for PINDA warming -> mesh level -> heat extruder -> prime,M115 U3.1.0; use the latest firmware version,G28 W ; home all axes without mesh bed leveling,M140 S[bed0_temperature] ; start heating the bed,M190 S[bed0_temperature] ; wait until bed heated,G4 S120 ; wait two minutes,M104 S[extruder0_temperature] ; start heating extruder,G80 ; run mesh bed leveling routine,M109 S[extruder0_temperature] ; wait for extruder temperature,G1 Y-3.0 F1000.0 ; prepare to prime,G92 E0 ; reset extrusion distance,G1 X60.0 E9.0  F1000.0 ; priming,G1 X100.0 E12.5  F1000.0 ; priming,M900 K45; PLA us K45 for PET K30 for PLA/ABS</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>M106 S0 ; turn off cooling fan,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G1 X0 Y200 ; part removal,M84 ; disable motors</endingGcode>
+  <endingGcode>M106 S0 ; turn off cooling fan,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G1 X0 Y200 ; part removal,M84 ; disable motors,M900 K0 ; reset linear advance to off by default</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Funky Town</celebrationSong>
-  <postProcessing></postProcessing>
+  <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer &quot;} ,{REPLACE &quot; Z = &quot; &quot; &quot;}</postProcessing>
   <defaultSpeed>4800</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
