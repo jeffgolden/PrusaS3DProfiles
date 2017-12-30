@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK3 (ABS)" version="2017-12-29 21:10:37" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK3 (ABS)" version="2017-12-30 17:02:56" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>ABS</printMaterial>
-  <printQuality>High</printQuality>
+  <printQuality>Detail</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -21,7 +21,7 @@
     <wipeDistance>2</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.1</layerHeight>
+  <layerHeight>0.15</layerHeight>
   <topSolidLayers>4</topSolidLayers>
   <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
@@ -31,9 +31,9 @@
   <startPointOriginY>400</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.45</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -197,15 +197,6 @@
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
   <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="PLA">
-    <globalExtruderTemperature>200</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
     <topSolidLayers>3</topSolidLayers>
@@ -242,24 +233,6 @@
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   </autoConfigureQuality>
-  <autoConfigureMaterial name="Matterhackers PLA">
-    <globalExtruderTemperature>215</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="Makergeeks PLA">
-    <globalExtruderTemperature>235</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>240</globalExtruderTemperature>
     <globalBedTemperature>100</globalBedTemperature>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK3 (PLA)" version="2017-12-29 21:10:25" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK3 (PLA)" version="2017-12-30 17:02:23" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
-  <printMaterial>Matterhackers PLA</printMaterial>
+  <printMaterial>PLA</printMaterial>
   <printQuality>Detail</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="215"/>
+    <setpoint layer="1" temperature="200"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>

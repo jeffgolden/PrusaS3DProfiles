@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-29 10:22:35" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-30 17:03:09" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -149,7 +149,7 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>Prusa-i3-MK2-bed.stl</printerModelsOverride>
-  <startingGcode>; begin starting script,; home -> heat bed -> delay 2 minutes for PINDA warming -> mesh level -> heat extruder -> prime,M115 U3.1.0; use the latest firmware version,G28 W ; home all axes without mesh bed leveling,M140 S[bed0_temperature] ; start heating the bed,M190 S[bed0_temperature] ; wait until bed heated,G4 S120 ; wait two minutes,M104 S[extruder0_temperature] ; start heating extruder,G80 ; run mesh bed leveling routine,M109 S[extruder0_temperature] ; wait for extruder temperature,G1 Y-3.0 F1000.0 ; prepare to prime,G92 E0 ; reset extrusion distance,G1 X60.0 E9.0  F1000.0 ; priming,G1 X100.0 E12.5  F1000.0 ; priming,M900 K45; PLA us K45 for PET K30 for PLA/ABS</startingGcode>
+  <startingGcode>; begin starting script,; home -&gt; heat bed -&gt; delay 2 minutes for PINDA warming -&gt; mesh level -&gt; heat extruder -&gt; prime,M115 U3.1.0; use the latest firmware version,G28 W ; home all axes without mesh bed leveling,M140 S[bed0_temperature] ; start heating the bed,M190 S[bed0_temperature] ; wait until bed heated,G4 S120 ; wait two minutes,M104 S[extruder0_temperature] ; start heating extruder,G80 ; run mesh bed leveling routine,M109 S[extruder0_temperature] ; wait for extruder temperature,G1 Y-3.0 F1000.0 ; prepare to prime,G92 E0 ; reset extrusion distance,G1 X60.0 E9.0  F1000.0 ; priming,G1 X100.0 E12.5  F1000.0 ; priming,M900 K45; PLA us K45 for PET K30 for PLA/ABS</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
