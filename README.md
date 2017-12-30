@@ -5,6 +5,8 @@ These started with the default profile in S3D and I made changes for Linear adva
 
 By no means am I claiming this is the best profile to use for S3D with these printers (or even a good one).  I am just storing them on github so other's may make use of them if they like.  If you find settings that work better and wish to submit a pull request with the changes I would welcome that!
 
+Note: MK2 users should avoid using the Temperature Calibration feature for the PINDA probe.   Instead use the new profiles, sbumitted by mariusstrom which use version of this built into the gcode.
+
 I also use this bed model for both printers, until a proper MK3 model can be found:
 
 https://www.thingiverse.com/thing:2196524
