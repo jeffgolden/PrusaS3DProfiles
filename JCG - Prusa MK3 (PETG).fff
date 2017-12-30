@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK3 (PETG)" version="2017-12-30 17:02:45" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK3 (PETG)" version="2017-12-30 17:49:34" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
@@ -11,10 +11,10 @@
     <width>0.5</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>1</retractionDistance>
+    <retractionDistance>1.2</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0.5</retractionZLift>
-    <retractionSpeed>2700</retractionSpeed>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
+  <infillPercentage>40</infillPercentage>
   <outlineOverlapPercentage>20</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -232,7 +232,7 @@
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>2</skirtLayers>
-    <infillPercentage>20</infillPercentage>
+    <infillPercentage>40</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   </autoConfigureQuality>

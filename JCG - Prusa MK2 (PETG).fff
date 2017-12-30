@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-30 17:03:09" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PETG)" version="2017-12-30 17:49:53" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Detail</printQuality>
@@ -11,10 +11,10 @@
     <width>0.5</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>1</retractionDistance>
+    <retractionDistance>1.2</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0.5</retractionZLift>
-    <retractionSpeed>2700</retractionSpeed>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
