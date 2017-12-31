@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="JCG - Prusa MK2 (PLA)" version="2017-12-30 17:03:03" app="S3D-Software 4.0.0">
+<profile name="JCG - Prusa MK2 (PLA)" version="2017-12-30 23:37:28" app="S3D-Software 4.0.0">
   <baseProfile>Prusa Research Original Prusa i3 MK2</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Detail</printQuality>
@@ -154,7 +154,7 @@
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Funky Town</celebrationSong>
-  <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer &quot;} ,{REPLACE &quot; Z = &quot; &quot; &quot;}</postProcessing>
+  <postProcessing></postProcessing>
   <defaultSpeed>4800</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
