@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -232,7 +232,7 @@
     <skirtLayers>2</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Detail">
     <layerHeight>0.15</layerHeight>
