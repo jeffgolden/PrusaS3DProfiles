@@ -7,6 +7,8 @@ By no means am I claiming this is the best profile to use for S3D with these pri
 
 Note: MK2 users should avoid using the Temperature Calibration feature for the PINDA probe.   Instead use the new profiles, sbumitted by mariusstrom which use version of this built into the gcode.
 
-I also use this bed model for both printers, until a proper MK3 model can be found:
-
+MK2 bed model for slicer:
 https://www.thingiverse.com/thing:2196524
+
+MK3 bed model for slicer:
+https://www.thingiverse.com/thing:2751051
