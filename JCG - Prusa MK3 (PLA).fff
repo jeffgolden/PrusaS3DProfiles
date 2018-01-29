@@ -145,7 +145,7 @@
   <GPXconfigOverride>r2</GPXconfigOverride>
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
-  <printerModelsOverride>Prusa-i3-MK2-bed.stl</printerModelsOverride>
+  <printerModelsOverride>Prusa_MK3_Assy_STL_-_FULL.STL</printerModelsOverride>
   <startingGcode>M115 U3.1.0 ; use the latest firmware version,G28 W ; home all axes without mesh bed leveling,M140 S[bed0_temperature] ; start heating the bed,M190 S[bed0_temperature] ; wait until bed heated,M104 S[extruder0_temperature] ; start heating extruder,G80 ; run mesh bed leveling routine,M109 S[extruder0_temperature] ; wait for extruder temperature,G1 Y-3.0 F1000.0 ; prepare to prime,G92 E0 ; reset extrusion distance,G1 X60.0 E9.0  F1000.0 ; priming,G1 X100.0 E12.5  F1000.0 ; priming,M900 K30; PLA us K45 for PET K30 for PLA/ABS</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
